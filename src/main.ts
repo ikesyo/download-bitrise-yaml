@@ -3,12 +3,12 @@ import {downloadBitriseYaml} from './download_bitrise_yaml'
 
 async function run(): Promise<void> {
   try {
-    const appSlug = core.getInput('appSlug', {required: true})
-    core.debug(`appSlug: ${appSlug}`)
+    const appSlug = core.getInput('app_slug', {required: true})
+    core.debug(`app_slug: ${appSlug}`)
 
-    const outputPath = core.getInput('outputPath')
+    const outputPath = core.getInput('output_path')
 
-    const bitriseToken = core.getInput('bitriseToken', {required: true})
+    const bitriseToken = core.getInput('bitrise_token', {required: true})
     core.setSecret(bitriseToken)
 
     await downloadBitriseYaml(appSlug, outputPath, bitriseToken)
