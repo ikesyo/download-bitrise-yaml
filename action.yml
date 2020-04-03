@@ -1,10 +1,14 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: 'download-bitrise-yaml'
+description: 'A GitHub Action for downloading bitrise.yml'
+author: 'IKEDA Sho'
 inputs:
-  myInput:              # change this
-    description: 'input description here'
-    default: 'default value if applicable'
+  appSlug:
+    description: 'Btirise app slug'
+  outputPath:
+    description: 'A path where the downloaded file is saved'
+    default: 'bitrise.yml'
+  bitriseToken:
+    description: 'Bitrise personal access token'
 runs:
   using: 'node12'
   main: 'dist/index.js'
