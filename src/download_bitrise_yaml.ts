@@ -1,4 +1,3 @@
-import * as core from '@actions/core'
 import * as http from '@actions/http-client'
 import * as fs from 'fs'
 
