@@ -1,5 +1,5 @@
-name: 'download-bitrise-yaml'
-description: 'A GitHub Action for downloading bitrise.yml'
+name: 'Download bitrise.yml'
+description: 'GitHub Action for downloading bitrise.yml'
 author: 'IKEDA Sho'
 inputs:
   app_slug:
