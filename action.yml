@@ -1,6 +1,9 @@
 name: 'Download bitrise.yml'
 description: 'GitHub Action for downloading bitrise.yml'
 author: 'IKEDA Sho'
+branding:
+  icon: 'download-cloud'
+  color: 'purple'
 inputs:
   app_slug:
     description: 'Btirise app slug'
