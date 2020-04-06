@@ -4,11 +4,13 @@ author: 'IKEDA Sho'
 inputs:
   app_slug:
     description: 'Btirise app slug'
+    required: true
   output_path:
     description: 'A path where the downloaded file is saved'
     default: 'bitrise.yml'
   bitrise_token:
     description: 'Bitrise personal access token'
+    required: true
 runs:
   using: 'node12'
   main: 'dist/index.js'
