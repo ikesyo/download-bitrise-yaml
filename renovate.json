@@ -1,5 +1,14 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base"
-  ]
+    "config:base",
+    ":separateMultipleMajorReleases",
+    ":timezone(Asia/Tokyo)",
+    "github>hatena/renovate-config:groupJest",
+    "github>hatena/renovate-config:groupLinters"
+  ],
+  "postUpdateOptions": ["npmDedupe"],
+  "npm": {
+    "rangeStrategy": "bump"
+  }
 }
