@@ -29,7 +29,7 @@
     "@actions/http-client": "^1.0.8"
   },
   "devDependencies": {
-    "@types/jest": "^26.0.13",
+    "@types/jest": "^26.0.14",
     "@types/node": "^12.12.59",
     "@typescript-eslint/parser": "^4.1.1",
     "@zeit/ncc": "^0.22.3",
